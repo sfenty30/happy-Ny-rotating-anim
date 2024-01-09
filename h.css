@@ -1,0 +1,41 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 72px;
+    color: #ffffff;
+    text-transform: uppercase;
+    animation: rotate-scale 3s infinite;
+}
+
+.letter {
+    display: inline-block;
+    transform-origin: center;
+}
+
+@keyframes rotate-scale {
+    0% {
+        transform: rotate(0deg) scale(1);
+        color:green;
+    }
+    50% {
+        transform: rotate(360deg) scale(1.2);
+        color:red;
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+        color: yellow;
+    }
+}
